@@ -1,0 +1,71 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+
+# Packaging
+*.egg-info/
+dist/
+build/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Node / Frontend
+# =========================
+node_modules/
+.next/
+out/
+.vercel/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Temp files
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# backend/frontend specific 
+# =========================
+backend/.env
+backend/venv/
+frontend/.next/
+frontend/node_modules/
+
+DEPLOYMENT.md
