@@ -28,7 +28,7 @@ htmlcov/
 # Node / Frontend
 # =========================
 node_modules/
-out/
+frontend/.next
 .vercel/
 
 # =========================
