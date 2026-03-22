@@ -1,0 +1,42 @@
+# ============================================
+# Song Shazam Pro — Backend Dependencies
+# Python 3.11+
+# ============================================
+
+# Framework
+fastapi==0.109.2
+uvicorn[standard]==0.27.1
+python-multipart==0.0.9
+pydantic==2.6.1
+pydantic-settings==2.1.0
+
+# Audio Processing
+librosa==0.10.1
+numpy==1.26.4
+scipy==1.11.4
+soundfile==0.12.1
+audioread==3.0.1
+pydub==0.25.1
+
+# Visualization
+matplotlib==3.8.2
+
+# HTTP Requests
+requests==2.31.0
+
+# Spotify
+spotipy==2.23.0
+
+# Image handling
+pillow==10.2.0
+
+# Environment
+python-dotenv==1.0.1
+
+# CORS
+starlette==0.36.3
+
+# Testing
+pytest==8.0.2
+pytest-asyncio==0.23.5
+httpx==0.27.0
