@@ -1,9 +1,8 @@
 import axios from "axios";
 
-// In dev, Next.js rewrites /api/* → http://localhost:8000/api/* (see next.config.mjs).
-// This means we use relative URLs ("") so all requests go through the same origin,
-// completely avoiding CORS issues between the browser and the FastAPI backend.
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "";
+// Points directly at the FastAPI backend.
+// In production (Netlify → Render) this is the full URL; in local dev it falls back to localhost.
+const API_BASE = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
 const api = axios.create({
   baseURL: API_BASE,
