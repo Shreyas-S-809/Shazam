@@ -81,10 +81,9 @@ graph TB
 ```
 ---
 Test Images
-
-![alt text](<../image (2).png>)
-![alt text](<../image (1).png>)
----
+![Image 1](images/image%20(1).png)
+![Image 2](images/image%20(2).png)
+![Image 3](images/image.png)
 
 ## 🧰 Tech Stack
 
@@ -290,6 +289,10 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 - If you found that the website is not returning the results which you were expecting : 
 - Its Likely the backend might be at sleep (render free tier) 
 - Even though it has been set to ping every 10 minutes using GitHub actions
+- And the most important factor is, how render.com behaves with free tier users, 
+- I even got a mail saying that your service has been taken down since it exceeded the memory limit
+- See this warning mail : 
+- So for stability, offline works better.
 - If you found any issues, happy to hear it from PR
 - Thank you.
 
