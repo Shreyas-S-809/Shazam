@@ -14,7 +14,7 @@
 
 **Record, recognize, and discover music in seconds.** Hum, sing, or play a song — our AI identifies it instantly, surfaces the music video, Spotify link, spectrogram visualization, and similar song recommendations.
 
-[🚀 Live Demo](https://song-shazam-pro.vercel.app) · [📖 API Docs](https://api.song-shazam-pro.onrender.com/docs) · [🐛 Report Bug](../../issues) · [✨ Request Feature](../../issues)
+[🚀 Live Demo](https://songrecognizer.netlify.app) · [📖 API Docs](https://api.song-shazam-pro.onrender.com/docs) 
 
 ---
 
@@ -38,9 +38,6 @@
 | 🎵 **Spotify Integration** | Direct link to play the song on Spotify |
 | 🔍 **Similar Songs** | Discover related tracks powered by cosine similarity analysis |
 | 📝 **Lyrics Search** | Look up full lyrics for identified songs |
-| 💾 **Save to Playlist** | Bookmark your recognized songs for later |
-| 🌙 **Dark Mode** | Gorgeous dark-first UI with glassmorphism design |
-| 📱 **Mobile-First** | Fully responsive — works beautifully on all devices |
 | 🐳 **One-Click Deploy** | Docker Compose for instant local setup |
 
 ---
@@ -82,7 +79,11 @@ graph TB
     style API fill:#0a0a0a,stroke:#6366f1,color:#fff
     style External fill:#0a0a0a,stroke:#f59e0b,color:#fff
 ```
+---
+Test Images
 
+![alt text](<../image (2).png>)
+![alt text](<../image (1).png>)
 ---
 
 ## 🧰 Tech Stack
@@ -103,12 +104,10 @@ graph TB
 | **Next.js 14** | React framework with App Router |
 | **TypeScript** | Type-safe development |
 | **Tailwind CSS** | Utility-first styling |
-| **shadcn/ui** | Beautiful, accessible components |
-| **framer-motion** | Smooth animations & transitions |
+
 | **Three.js / R3F** | 3D waveform visualization |
 | **Recharts** | Data visualization |
-| **sonner** | Toast notifications |
-| **Axios** | HTTP client |
+
 
 ### Infrastructure
 | Technology | Purpose |
@@ -279,47 +278,6 @@ pytest tests/ -v --tb=short
 cd frontend
 npm run test
 ```
-
----
-
-## 🚢 Deployment
-
-### Render (Backend)
-1. Connect your GitHub repo to [Render](https://render.com)
-2. Create a new **Web Service** → point to `backend/`
-3. Set build command: `pip install -r requirements.txt`
-4. Set start command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
-5. Add environment variables from `.env.example`
-
-### Vercel (Frontend)
-1. Connect your GitHub repo to [Vercel](https://vercel.com)
-2. Set root directory: `frontend/`
-3. Add env: `NEXT_PUBLIC_API_URL=https://your-backend.onrender.com`
-4. Deploy
-
----
-
-## 🗺️ Roadmap
-
-- [x] Core song recognition via ACRCloud
-- [x] YouTube video integration
-- [x] Spectrogram visualization
-- [x] Real-time mic recording with waveform
-- [x] Spotify integration
-- [x] 3D wave animation (Three.js)
-- [x] Dark mode + glassmorphism UI
-- [ ] Lyrics display integration
-- [ ] User authentication & playlists
-- [ ] Song history with local storage
-- [ ] PWA support
-- [ ] Mobile app (React Native)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
 ---
 
 ## 📄 License
@@ -328,12 +286,17 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ---
 
+## End Note: 
+- If you found that the website is not returning the results which you were expecting : 
+- Its Likely the backend might be at sleep (render free tier) 
+- Even though it has been set to ping every 10 minutes using GitHub actions
+- If you found any issues, happy to hear it from PR
+- Thank you.
+
 <div align="center">
 
 **Built with ❤️ by music lovers, for music lovers**
 
 ⭐ Star this repo if you found it useful!
-
-*Used by 1,000+ developers and music enthusiasts worldwide*
 
 </div>
