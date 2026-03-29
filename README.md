@@ -291,7 +291,7 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 - Even though it has been set to ping every 10 minutes using GitHub actions
 - And the most important factor is, how render.com behaves with free tier users, 
 - I even got a mail saying that your service has been taken down since it exceeded the memory limit
-- See this warning mail : 
+- See this warning mail: [warning.png](images/warning.png)
 - So for stability, offline works better.
 - If you found any issues, happy to hear it from PR
 - Thank you.
