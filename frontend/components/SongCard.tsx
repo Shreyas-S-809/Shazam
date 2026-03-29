@@ -93,7 +93,7 @@ export default function SongCard({
               </a>
             ) : (
               <div className="w-full py-3 bg-white/5 border border-white/8 text-white/30 text-sm rounded-2xl text-center">
-                YouTube link loadingâ€¦
+                YouTube link loading...
               </div>
             )}
 
